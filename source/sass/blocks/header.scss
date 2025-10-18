@@ -5,6 +5,7 @@
   padding: 37px 0;
   color: $color-default-white;
   background-color: rgba(16, 16, 29, 0.9);
+  z-index: 100;
 
   &__wrapper {
     display: flex;
