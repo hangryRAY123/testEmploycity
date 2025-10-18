@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Описание проекта" />
+    <title>LoremIpsum.Net</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tom-select@2.0.0/dist/css/tom-select.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__wrapper">
+            <a class="logo" href="#">LoremIpsum.<span>Net</span></a>
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#" class="nav__link nav__link--active">Бизнес</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">О нас</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Цены</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Оформить заказ</a>
+                </li>
+              </ul>
+              <button class="nav__toggle" type="button">
+                <svg
+                  class="nav__burger"
+                  aria-hidden="true"
+                  focusable="false"
+                  width="24"
+                  height="24"
+                >
+                  <use href="img/sprite.svg#burger"></use>
+                </svg>
+                <svg
+                  class="nav__close"
+                  aria-hidden="true"
+                  focusable="false"
+                  width="24"
+                  height="24"
+                >
+                  <use href="img/sprite.svg#close"></use>
+                </svg>
+                <span class="visually-hidden">Мобильное меню.</span>
+              </button>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="intro">
+          <div class="container">
+            <div class="intro__wrapper">
+              <h1 class="intro__title">
+                <span>Lorem ipsum</span> dolor sit <br />
+                amet consectetur
+                <span>adipiscing</span>
+              </h1>
+              <div class="intro__inner">
+                <p class="intro__description">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus!
+                </p>
+                <ul class="intro__list">
+                  <li class="intro__item">Totam rem aperiam eaque ipsa</li>
+                  <li class="intro__item">
+                    Sit voluptatem accusantium doloremque laudantium
+                  </li>
+                  <li class="intro__item">
+                    Sed ut perspiciatis, unde omnis iste natus error
+                  </li>
+                </ul>
+              </div>
+
+              <div class="intro__btn">
+                <button class="btn" type="button">Заказать</button
+                ><button class="btn btn--white" type="button">Подробнее</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="registration scroll-section">
+          <div class="container">
+            <div class="registration__wrapper">
+              <h2 class="registration__title">
+                Оформление <span>Заказа</span>
+              </h2>
+              <p class="registration__description">
+                Перед заполнением формы ознакомьтесь с нашей схемой работы!
+              </p>
+              <div class="registration__inner">
+                <div class="registration__list">
+                  <div class="registration__item">
+                    <div class="registration__icon">
+                      <svg
+                        width="55"
+                        height="55"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <use xlink:href="img/sprite.svg#search"></use>
+                      </svg>
+                    </div>
+                    <span>Lorem ipsum dolor sit amet</span>
+                  </div>
+                  <div class="registration__item">
+                    <div class="registration__icon">
+                      <svg
+                        width="55"
+                        height="55"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <use xlink:href="img/sprite.svg#percent"></use>
+                      </svg>
+                    </div>
+                    <span>Сonsecteturadipiscing elit</span>
+                  </div>
+                  <div class="registration__item">
+                    <div class="registration__icon">
+                      <svg
+                        width="55"
+                        height="55"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <use xlink:href="img/sprite.svg#file"></use>
+                      </svg>
+                    </div>
+                    <span>Sed do eiusmod tempor</span>
+                  </div>
+                  <div class="registration__item">
+                    <div class="registration__icon">
+                      <svg
+                        width="55"
+                        height="55"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <use xlink:href="img/sprite.svg#message"></use>
+                      </svg>
+                    </div>
+                    <span>Esse cillum dolore eu fugiat</span>
+                  </div>
+                  <div class="registration__item">
+                    <div class="registration__icon">
+                      <svg
+                        width="55"
+                        height="55"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <use xlink:href="img/sprite.svg#money"></use>
+                      </svg>
+                    </div>
+                    <span>Excepteur sint occaecat cupidatat non proident</span>
+                  </div>
+                </div>
+              </div>
+              <form
+                id="registration-form"
+                class="form"
+                action="#"
+                method="POST"
+              >
+                <div class="form__inner">
+                  <select
+                    class="form__input custom-select"
+                    name="system"
+                    id="system"
+                  >
+                    <option value="">Выберите тип системы</option>
+                    <option value="Sed ut perspiciatis">
+                      Sed ut perspiciatis
+                    </option>
+                    <option value="Nemo enim ipsam">Nemo enim ipsam</option>
+                    <option value="Et harum quidem">Et harum quidem</option>
+                    <option value="Temporibus autem">Temporibus autem</option>
+                    <option value="Itaque earum rerum">
+                      Itaque earum rerum
+                    </option>
+                    <option value="Nemo enim">Nemo enim</option>
+                    <option value="Et harum">Et harum</option>
+                    <option value="Temporibus">Temporibus</option>
+                    <option value="Itaque earum">Itaque earum</option>
+                  </select>
+                  <input
+                    class="form__input"
+                    type="email"
+                    name="email"
+                    autocomplete="email"
+                    placeholder="Ваш e-mail"
+                    required
+                  />
+                  <input
+                    class="form__input"
+                    type="text"
+                    name="name"
+                    autocomplete="name"
+                    placeholder="Ваше имя"
+                    required
+                  />
+                  <div class="form__range">
+                    <label for="progress"
+                      >Sed ut perspiciatis, unde omnis iste natus
+                      <span id="progress-value">75</span>%</label
+                    >
+                    <input
+                      id="progress"
+                      type="range"
+                      name="progress"
+                      min="0"
+                      max="100"
+                      value="75"
+                    />
+                  </div>
+                  <label class="form__file" tabindex="0">
+                    <svg
+                      width="20"
+                      height="20"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <use xlink:href="img/sprite.svg#file-form"></use>
+                    </svg>
+                    <span>Прикрепить файл</span>
+                    <input
+                      class="visually-hidden"
+                      type="file"
+                      name="document"
+                    />
+                  </label>
+                  <button class="btn" type="submit">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer scroll-section">
+        <div class="container">
+          <div class="footer__wrapper">
+            <p class="footer__copyright">
+              © 2018 «LoremIpsum.net» Все права защищены.
+            </p>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <svg
+                  width="20"
+                  height="20"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="img/sprite.svg#qiwi"></use></svg
+                ><span>Qiwi wallet</span>
+              </li>
+              <li class="footer__item">
+                <svg
+                  width="20"
+                  height="20"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="img/sprite.svg#yandex"></use></svg
+                ><span>Yandex Money</span>
+              </li>
+              <li class="footer__item">
+                <svg
+                  width="20"
+                  height="20"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="img/sprite.svg#web"></use></svg
+                ><span>Web Money</span>
+              </li>
+            </ul>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <svg
+                  width="20"
+                  height="20"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="img/sprite.svg#mail"></use>
+                </svg>
+                <a href="mailto:info@ipsum228.com">info@ipsum228.com</a>
+              </li>
+              <li class="footer__item">
+                <svg
+                  width="20"
+                  height="20"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="img/sprite.svg#vk"></use>
+                </svg>
+                <a href="#" target="_blank" rel="noopener noreferrer"
+                  >Мы вконтакте</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tom-select@2.0.0/dist/js/tom-select.complete.min.js"></script>
+  </body>
+</html>
