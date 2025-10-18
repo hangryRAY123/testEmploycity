@@ -1,0 +1,35 @@
+.btn {
+  font-family: "Lato", "Tahoma", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  max-width: 183px;
+  color: $color-default-white;
+  background-color: #3e9cdc;
+  border: 1px solid $color-default-white;
+  border-radius: 4px;
+  padding: 15px 10px;
+  cursor: pointer;
+  transition: $trans-default;
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  @include hover-focus {
+    background-color: #286690;
+  }
+
+  &--white {
+    background-color: $color-default-white;
+    color: #2a2b30;
+    border: 1px solid #6f6d7b;
+
+    @include hover-focus {
+      background-color: #a5d8fa;
+    }
+  }
+}

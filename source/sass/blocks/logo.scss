@@ -1,0 +1,15 @@
+.logo {
+  font-family: "Raleway", "Tahoma", sans-serif;
+  font-weight: 800;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: $color-default-white;
+
+  span {
+    color: #42a9ed;
+  }
+
+  @include vp-767 {
+    font-size: 20px;
+  }
+}

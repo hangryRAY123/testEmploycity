@@ -1,0 +1,107 @@
+.nav {
+  color: $color-default-white;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    row-gap: 20px;
+  }
+
+  &__link {
+    font-family: "Lato", "Tahoma", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: $color-default-white;
+    transition: $trans-default;
+    background: no-repeat 0 90%;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0 1px;
+
+    &--active {
+      color: #43abf0;
+      pointer-events: none;
+    }
+
+    @include hover-focus {
+      background-size: 100% 1px;
+    }
+  }
+
+  &__toggle {
+    display: none;
+  }
+
+  @include vp-1023 {
+    &__toggle {
+      display: block;
+      position: relative;
+      width: 24px;
+      height: 24px;
+      border: none;
+      background-color: transparent;
+      padding: 0;
+      cursor: pointer;
+
+      svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 0.3s ease;
+      }
+    }
+
+    &__close {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    &__toggle.active &__close {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    &__toggle.active &__burger {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    &__list {
+      position: absolute;
+      right: 0;
+      top: 100%;
+      flex-direction: column;
+      background-color: rgba(16, 16, 29, 0.9);
+      border-radius: 0 0 20px 20px;
+      transition: 0.3s ease;
+      transform: translateX(100%);
+      z-index: 20;
+    }
+
+    &__list.active {
+      transform: translateX(0);
+    }
+
+    &__link {
+      display: block;
+      font-size: 20px;
+      line-height: 20px;
+      padding: 20px 40px;
+      white-space: nowrap;
+    }
+  }
+
+  @include vp-767 {
+    &__list {
+      padding: 8px 0;
+    }
+
+    &__link {
+      padding: 12px 20px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}
